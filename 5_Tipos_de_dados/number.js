@@ -16,6 +16,7 @@ console.log(typeof textoComNumero);
 let somaStr = 25
 
 // NÃO FAZER A SOMA DE NUMERO COM STRING;
+console.log(somaStr);
 console.log(somaStr + textoComNumero); 
 console.log(typeof somaStr);
 
