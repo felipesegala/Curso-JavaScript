@@ -17,11 +17,11 @@ while(x <= 5) {
 let arr = ['teste', 'testando', 'a', 'b'];
 let y = 0; // recebe o resultado da condição e soma 1, fazendo o loop;
 
-while(y <= 3) {
+while(y <= 3) { //enquanto o indice do array for menor do que 3;
 
     console.log(arr[y]);
 
-    y += 1;
+    y += 1; // soma mais 1;
 }
 
 let palavra = 'Felipe';
