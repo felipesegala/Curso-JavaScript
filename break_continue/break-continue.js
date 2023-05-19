@@ -18,7 +18,7 @@ while(x < 100) {
 
     if(x === 60 || x === 90) { // condição
         console.log('CONTINUE');
-        continue; // pulará o sessenta e não mostrará a msg
+        continue; // pulará o codigo e pula pra proxima
     }
 
     console.log('testando continue', x);
