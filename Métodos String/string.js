@@ -26,3 +26,40 @@ console.log(remove);
 
 let novaFrase = frase.replace('roeu', 'teste');
 console.log(novaFrase);
+
+//toLowerCase e toUpperCase
+
+let texto = 'Esta é a frase que vamos manipular';
+
+console.log(texto.toLocaleLowerCase());
+
+let fraseCaixaAlta = texto.toLocaleLowerCase();
+
+console.log(texto.toLocaleUpperCase());
+
+
+// trim, remove os espaços desnecessarios da string,
+
+let nome1 = '                Felipe                ';
+
+let nome1Trim = nome1.trim();
+
+console.log(nome1);
+console.log(nome1Trim);
+
+//split, mostra a frase separada em um array e cada palavra em uma string, como indece do array;
+
+console.log(texto.split(' '));
+
+let tags = 'PHP, JavaScript, HTML, CSS'; 
+
+console.log(tags.split(', '));
+
+
+//lastIndexOff
+
+let fraseDois = 'Eu quero a última palavra teste desta frase de teste';
+
+console.log(fraseDois.indexOf('teste'));
+
+console.log(fraseDois.lastIndexOf('teste'));
