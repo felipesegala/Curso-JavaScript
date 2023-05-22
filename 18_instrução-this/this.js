@@ -12,6 +12,9 @@ let pessoa = {
     },
     aniversario: function() {
         this.idade += 1;
+    },
+    saudacao: function() {
+        return 'Sr ' + this.nome;
     }
 };
 
@@ -29,3 +32,9 @@ pessoa.aniversario();
 pessoa.aniversario();
 
 console.log(pessoa.idade);
+
+console.log(pessoa.saudacao());
+
+let sdc = pessoa.saudacao();
+
+console.log("ola", sdc);
