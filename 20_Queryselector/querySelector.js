@@ -1,22 +1,13 @@
-// tag, nesse exemplo abaixo consigo acessar o h1 somente.
+let itensClass = document.getElementsByClassName('item');
 
-let titulo = document.getElementsByTagName('h1')[0];
+console.log(itensClass);
 
-console.log(titulo);
+let itensQuery = document.querySelectorAll('#lista2 li');
 
-let lis = document.getElementsByTagName('li');
+console.log(itensQuery);
 
-console.log(lis);
+//Nesse formato acima consigo acessar os elementos HTML com mais liberdade, podendo usar o estilo de chamada dos elementos como do css, '#lista2 li'
 
-//id
+let itensQuery2 = document.querySelectorAll('#lista li');
 
-let paragrafo = document.getElementById('paragrafo');
-
-console.log(paragrafo);
-
-//class
-
-let itensDaLista = document.getElementsByClassName('item');
-
-console.log(itensDaLista);
-
+console.log(itensQuery2);
