@@ -13,7 +13,7 @@ if(x > 0) {
     console.log('O x passou de 0');
 }
 
-// clearInterval
+// clearInterval na prática
 
 let myInterval = setInterval(function() {
     console.log('Imprimindo interval');
