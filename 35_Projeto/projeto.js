@@ -14,8 +14,16 @@ function addTask() {
         newTask.querySelector('.task-title').textContent = taskTitle;
 
         //remover as classes desnecessária
-        newTask.classlist.remove('template');
-        newTask.classlist.remove('hide');
+        newTask.classList.remove('template');
+        newTask.classList.remove('hide');
+
+        //adiciona tarefa na lista
+        const list = document.querySelector('#task-list');
+
+        list.appendChild(newTask);
+
+        //limpar texto
+        document.querySelector('#task-title').value = '';
     }
 }
 
