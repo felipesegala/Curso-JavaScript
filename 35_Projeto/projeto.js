@@ -10,6 +10,12 @@ function addTask() {
 
         const newTask = template.cloneNode(true);
         
+        //adiciona titulo
+        newTask.querySelector('.task-title').textContent = taskTitle;
+
+        //remover as classes desnecessária
+        newTask.classlist.remove('template');
+        newTask.classlist.remove('hide');
     }
 }
 
