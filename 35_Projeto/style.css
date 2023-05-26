@@ -118,3 +118,13 @@ ion-icon {       /*aumenta font do + */
     color: #FFF;
     background-color: #EB0927;
 }
+
+.hide {
+    display: none;
+}
+
+#task-list li.done {
+    background-color: #34073D;
+    color: #FFF;
+    text-decoration: line-through;
+}
