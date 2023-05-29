@@ -6,25 +6,50 @@ Podemos aplicar o recurso em funções anônimas e métodos de classe.
 Tentar usar o await sem o async gera um erro
 */
 
-function primeiraFuncao() {
+// function primeiraFuncao() {
 
-    return new Promise((resolve) => {
+//     return new Promise((resolve) => {
 
-        setTimeout(() => {
-            console.log('Esperou isso aqui');
-            resolve()
-        }, 2000)
-    })
+//         setTimeout(() => {
+//             console.log('Esperou isso aqui');
+//             resolve()
+//         }, 2000)
+//     })
 
 
+// }
+
+// async function segundaFuncao() {
+//     console.log('Iniciou');
+
+//     await primeiraFuncao();
+
+//     console.log('Terminou');
+// };
+
+// segundaFuncao();
+
+//pratica
+function getUser(id) {
+    return fetch(`https://reqres.in/api/users?id=${id}`) //Obtendo um usuário pela api
+    //fetch é um recurso javascript para fazer requisições assíncronas
+    .then(data => data.json())
+    //then pq o fetch me retorna uma Promise
+    .catch(err => console.log(err))
+    //catch para homologar eventuais erros que possam ocorrer na requisição
 }
 
-async function segundaFuncao() {
-    console.log('Iniciou');
+async function showUserName(id) {
 
-    await primeiraFuncao();
+    try {
+        const user = await getUser(id)
 
-    console.log('Terminou');
-};
+        console.log(`O nome do usuário é: ${user.data.first_name}`);
+    } catch(err) {
+        console.log(err);
+    }
 
-segundaFuncao();
+    
+}
+
+showUserName(3)
