@@ -1,0 +1,10 @@
+{
+    "nome": "Felipe",
+    "idade": 32,
+    "esta_trabalhando": false,
+    "detalhes_profissap": {
+      "profissao": "Programador",
+      "empresa": "Empresa x"  
+    },
+    "hobbies": ["Programar", "Estudar", "Games"]
+}
